@@ -300,7 +300,7 @@ const App: React.FC = () => {
         <h1 className="text-xl font-black uppercase mb-2 text-rose-400">环境变量缺失 (ENV MISSING)</h1>
         <p className="text-xs text-slate-400 font-bold mb-8 uppercase tracking-widest leading-relaxed">
           云端构建需要配置 Supabase URL 和 Key。<br/>
-          请在 GitHub Repo -> Settings -> Secrets 中添加。<br/>
+          请在 GitHub Repo -&gt; Settings -&gt; Secrets 中添加。<br/>
           Build Success but Connect Failed.
         </p>
         <button onClick={() => window.location.reload()} className="px-8 py-4 bg-white/10 rounded-2xl text-[10px] font-black uppercase">刷新检查</button>

@@ -38,9 +38,9 @@ def generate_report(data):
         "recent_revenue_samples": [t["revenue"] for t in data["transactions"][:10]]
     }
 
-    prompt = f"你现在是 Bahati Jackpots 公司的 AI 运营总监。根据以下数据生成一份中文业务日报：
+    prompt = f"""你现在是 Bahati Jackpots 公司的 AI 运营总监。根据以下数据生成一份中文业务日报：
 {json.dumps(summary)}
-要求：1. 总结营收状况。2. 列出急需处理的机器故障。3. 提醒风险司机（如欠款高或未上线）。4. 给出具体的运营建议。"
+要求：1. 总结营收状况。2. 列出急需处理的机器故障。3. 提醒风险司机（如欠款高或未上线）。4. 给出具体的运营建议。"""
 
     try:
         res = requests.post(
